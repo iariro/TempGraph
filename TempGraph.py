@@ -9,7 +9,7 @@ def readcsv():
 	weeks = {}
 	for i, row in df.iterrows():
 		dt = datetime.datetime.strptime(row['Date/Time'], '%Y-%m-%d %H:%M:%S')
-		if dt < datetime.datetime(2019, 6, 4):
+		if dt < datetime.datetime(2019, 7, 1):
 			continue
 		if dt.date() not in days:
 			days[dt.date()] = [None] * 24
